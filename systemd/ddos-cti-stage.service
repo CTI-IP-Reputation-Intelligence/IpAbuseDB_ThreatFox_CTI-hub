@@ -1,0 +1,39 @@
+[Unit]
+Description=Build merged AbuseIPDB and ThreatFox IP-reputation dataset
+Wants=network-online.target
+After=network-online.target
+ConditionPathExists=/etc/ddos-cti-stage/stage.env
+
+[Service]
+Type=oneshot
+User=cti-stage
+Group=cti-stage
+SupplementaryGroups=ddos-cti-readers
+ExecStart=/usr/local/bin/ddos-cti-collect
+ExecStartPost=/usr/bin/find /data/ddos-cti/raw/abuseipdb -maxdepth 1 -type f -name abuseipdb_*.json -mtime +90 -delete
+ExecStartPost=/usr/bin/find /data/ddos-cti/raw/threatfox -maxdepth 1 -type f -name threatfox_*.csv -mtime +90 -delete
+ExecStartPost=/usr/bin/find /data/ddos-cti/raw/threatfox -maxdepth 1 -type f -name threatfox_*.zip -mtime +90 -delete
+ExecStartPost=/usr/bin/find /data/ddos-cti/exports/archive -maxdepth 1 -type f -name cti_ip_reputation_*.csv -mtime +90 -delete
+TimeoutStartSec=20min
+UMask=0027
+Nice=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/data/ddos-cti
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+ProtectClock=true
+ProtectHostname=true
+PrivateDevices=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+LockPersonality=true
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

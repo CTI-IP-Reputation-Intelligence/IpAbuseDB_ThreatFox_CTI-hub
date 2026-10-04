@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+exec /opt/ddos-cti-stage/venv/bin/python \
+  /opt/ddos-cti-stage/app/build_features.py

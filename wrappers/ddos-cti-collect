@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+config_file="/etc/ddos-cti-stage/stage.env"
+python_bin="/opt/ddos-cti-stage/venv/bin/python"
+collector="/opt/ddos-cti-stage/app/collector.py"
+
+set -a
+source "${config_file}"
+set +a
+
+exec "${python_bin}" "${collector}"

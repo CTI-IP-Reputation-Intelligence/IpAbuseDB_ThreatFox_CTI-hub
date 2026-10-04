@@ -1,0 +1,52 @@
+# Credentials and local configuration
+.env
+*.env
+!stage.env.example
+stage.env
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.kdbx
+*.sqlite
+*.sqlite3
+*.bak
+
+# Runtime data and state
+raw/
+exports/
+features/
+state/
+logs/
+*.log
+*.pid
+*.lock
+*.csv
+*.jsonl
+*.ndjson
+
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Editors, operating systems, archives, and build outputs
+*~
+*.swp
+.DS_Store
+Thumbs.db
+dist/
+build/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+SHA256SUMS.local

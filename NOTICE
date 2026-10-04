@@ -1,0 +1,13 @@
+IpAbuseDB_ThreatFox_CTI hub
+Copyright © 2026 Ahmed Mekky. All rights reserved.
+
+Author:
+Ahmed Mekky
+Deputy General Manager – Head of Incident Response and Digital Forensics
+Email: ahmedmekkyf13@gmail.com
+
+Use, modification, and redistribution are governed by the LICENSE file.
+
+This product consumes intelligence from AbuseIPDB and ThreatFox/abuse.ch.
+Their names, data, APIs, and services remain subject to their respective terms.
+No provider dataset or credential is distributed with this source package.

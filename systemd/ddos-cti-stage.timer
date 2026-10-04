@@ -1,0 +1,11 @@
+[Unit]
+Description=Run DDoS CTI staging collection daily
+
+[Timer]
+OnCalendar=*-*-* 02:15:00
+Persistent=true
+AccuracySec=1min
+Unit=ddos-cti-stage.service
+
+[Install]
+WantedBy=timers.target
