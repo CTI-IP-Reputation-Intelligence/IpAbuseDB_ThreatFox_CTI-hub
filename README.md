@@ -77,20 +77,6 @@ Do not continue with installation while the clock is unsynchronized. If synchron
 
 ## One-command installation
 
-While the repository remains private for acceptance testing, install Git and GitHub CLI, authenticate as an authorized organization member, clone the release repository, and run the local installer:
-
-```bash
-sudo apt update
-sudo apt install -y git gh
-gh auth login --hostname github.com --git-protocol https --web
-gh auth setup-git
-gh repo clone CTI-IP-Reputation-Intelligence/IpAbuseDB_ThreatFox_CTI-hub
-cd IpAbuseDB_ThreatFox_CTI-hub
-sudo bash install_ipabusedb_threatfox_cti_hub.sh
-```
-
-After the repository is formally approved and made public, GitHub authentication is unnecessary:
-
 ```bash
 sudo apt update
 sudo apt install -y git
