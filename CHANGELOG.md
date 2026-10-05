@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added the README demonstration animation `cti-hub.gif`.
+
 ## 1.0.0 — 2026-10-04
 
 - Prepared a history-free Version 1 source package for the organization release repository.
