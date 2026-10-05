@@ -4,6 +4,7 @@ Standalone AbuseIPDB and ThreatFox IP-intelligence collection and staging for DD
 
 This history-free `1.0.0` source package contains the one-command installer, runtime source, systemd units, offline tests, documentation, and integrity records. It contains no OpenCTI server setup, Grafana integration, operational CTI data, credentials, models, alerts, logs, or internal infrastructure values.
 
+![CTI hub demonstration](cti-hub.gif)
 
 ## Prerequisites
 
@@ -265,6 +266,7 @@ The behavior last confirmed on **30 September 2026** was promoted into this `1.0
 | 34 | `tests/test_pipeline.py` | Synthetic offline collector and feature-builder acceptance test. |
 | 35 | `wrappers/ddos-cti-build-features` | Stable feature-builder launcher. |
 | 36 | `wrappers/ddos-cti-collect` | Stable collector launcher. |
+| 37 | `cti-hub.gif` | README demonstration image. |
 
 ### Installed and runtime file destinations
 

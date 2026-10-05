@@ -8,6 +8,7 @@ README.md
 SECURITY.md
 VERSION
 config/stage.env.example
+cti-hub.gif
 docs/APPROVAL_RECORD.md
 docs/DATA_DICTIONARY.md
 docs/GITHUB_INTEGRATION.md

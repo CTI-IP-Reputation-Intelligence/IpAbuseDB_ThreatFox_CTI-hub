@@ -10,7 +10,7 @@ Status: **PASS — history-free source package prepared; repository remains priv
 - Credentials, tokens, private keys, passwords, completed environment files, and authentication databases.
 - Operational network addresses, server names, customer or employer identifiers, and environment-specific configuration.
 - Raw provider downloads, generated evidence or feature CSVs, state, alerts, models, databases, logs, caches, backups, and archives.
-- Internal screenshots, demonstration media, internal step reports, and abandoned scripts.
+- Internal screenshots, internal demonstration media (other than the reviewed public README image `cti-hub.gif`), internal step reports, and abandoned scripts.
 - OpenCTI, Grafana, Docker deployment, and unrelated project content.
 - The previous personal repository URL.
 
