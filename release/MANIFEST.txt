@@ -1,4 +1,5 @@
 .gitignore
+02_threat-intel-merge_zoomed_light.png
 AUTHORS.md
 CHANGELOG.md
 CONTRIBUTIONS.md
