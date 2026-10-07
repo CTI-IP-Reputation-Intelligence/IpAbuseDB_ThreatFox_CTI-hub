@@ -68,7 +68,7 @@ if find . -type f \( \
     -name '*.kdbx' -o -name '*.csv' -o -name '*.jsonl' -o -name '*.ndjson' -o \
     -name '*.gif' -o -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o \
     -name '*.webp' -o -name '*.tar' -o -name '*.tar.gz' -o -name '*.tgz' -o \
-    -name '*.zip' \) ! -path './config/stage.env.example' ! -path './cti-hub.gif' -print -quit | grep -q .; then
+    -name '*.zip' \) ! -path './config/stage.env.example' ! -path './cti-hub.gif' ! -path './02_threat-intel-merge_zoomed_light.png' -print -quit | grep -q .; then
   fail "generated data, credentials, logs, media, databases, or archives are present."
 fi
 
