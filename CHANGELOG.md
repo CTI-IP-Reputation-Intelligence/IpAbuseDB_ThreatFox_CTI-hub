@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Added the README demonstration animation `cti-hub.gif`.
+- Added the merged ThreatFox and AbuseIPDB feed diagram `02_threat-intel-merge_zoomed_light.png` before the demonstration animation.
 
 ## 1.0.0 — 2026-10-04
 
